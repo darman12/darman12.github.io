@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* "zero-in" code that eliminates inconsistencies due to varying
+defaults among browsers */
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: lato, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #343445;
+}
+
+.contact-buttons {
+   display: grid;
+   grid-template-columns: repeat(12, minmax(50px,1fr));
+   grid-gap: 1em;
+}
+
+.hero {
+	height: 780px; 
+	color: #FFFFFF;
+   background: #5513AA; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(-60deg,rgb(250, 66, 241), #5513AA); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(-60deg,rgb(250, 66, 241), #5513AA); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(-60deg,rgb(250, 66, 241), #5513AA); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(-60deg,rgb(250, 66, 241), #5513AA); /* Standard syntax */
+}
+
+.hero p {
+   font-size: 25px;
+   padding: 3em 1em;
+   text-align: center;
+}
+
+footer {
+	padding: 20px 30px;
+	display: block;
+   background-color: #FFCB2E;
+   color: rgb(190, 152, 48);
+   font-size: 5px;
+   text-align: center;
+}
+
+img {
+	width: 100%;
+	max-width: auto;
+	vertical-align: middle;
+}
+
+.shadowed {
+	box-shadow: 0px 10px 15px 0px gray;
+}
+
+.style-nav ul {
+	list-style-type: none;
+}
+
+.style-nav ul li a {
+	text-decoration: none;
+	color: #336f47;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	background-color: #F4F4F4;	
+	border-radius: 20px 5px 20px 5px;
+	margin-bottom: 4px;
+}
+
+.style-nav ul li a:hover { 
+	background-color: #E0F0E5;
+	border-radius: 20px 5px 20px 5px;
+}
+
+h1 {
+	font-size: 70px;
+	text-transform: uppercase;
+   font-weight: 200;
+   padding-top: 3em;
+   margin-bottom: 60px;
+	text-align: center; 
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 23px;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 120px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 35px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 35px;
+	
+}
+
+.highlighted-span {
+	background-color: #333;
+}
+
+.button {
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 5px 5px 20px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 7px;
+}
+
+.info-box-purple {
+	background-color: #5513AA;
+	color: #FFFFFF;
+	padding: 30px 20px 60px;
+	text-align: center;
+}
+
+.info-box-dark {
+	background-color: #2d2d35;
+	color: #FFFfff;
+	padding: 30px 20px 60px;
+   text-align: center;
+}
+
+.info-box-dark p {
+   color: #464649;
+   padding: 0em;
+}
+
+.footer-text {
+	font-size: 13px;
+	margin-bottom: 20;
+}
+
+.col {
+	width: 100%;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.color-break-orange {
+	background-color: #FFA818;
+	color: #FFFfff;
+	padding: 10px;
+	text-align: center;
+}
+
+.fa {
+   display: inline-block;
+   text-decoration: none;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}
+
+ul a {
+   padding: .25em .5em;
+}
+
+
+/* - - - - - - - - - - Tablet View (768px) - - - - - - - - -*/
+@media (min-width: 768px) {
+	
+	.style-nav ul li {
+		display: inline-block;
+	}
+	
+	.style-nav ul {
+		text-align: center;
+		font-size: 120%;
+	}
+	
+	.nav-button { 
+		background-color: #F4F4F4;	
+		border-radius: 20px 5px 20px 5px;
+	}
+	
+	.col-md-one-half {
+		width: 50%;
+	}
+	
+	.col-golden-small {
+		width: 61%;
+	}
+	
+	.col-golden-big {
+		width: 39%;
+	}
+	
+	.col {
+		float: left;
+   }
+   
+   .hero p {
+      padding: 3em 3em;
+   }
+}
+
+
+
+/*------------------Desktop View (1024px)------------------------*/
+@media (min-width: 1024px){
+		
+	.style-logo {
+		float: left;
+	}
+	
+	.style-nav {
+		float: right;
+		font-size: 120%;
+   }
+   
+   header {
+      margin-top: 1.5em;
+      color: white;
+      text-align: left;
+      padding: 0px 10px 0px 10px;
+   }
+   
+   header p {
+      margin-bottom: 1.5em;
+      text-align: right;
+   }
+	
+	.nav-button { 
+		background-color: #F4F4F4;	
+		border-radius: 20px 5px 20px 5px;
+	}
+	
+	.col-lg-one-fourth {
+		width: 25%;
+   }
+}

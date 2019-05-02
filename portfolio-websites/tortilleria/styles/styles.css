@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/* "zero-in" code that eliminates inconsistencies due to varying
+defaults among browsers */
+html,
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+header {
+	padding: 20px;
+}
+
+.hero {
+	background-image: url("../images/carne-asada-tacos.jpg");
+	height: 500px;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+	width: 100%;
+	float: left;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	padding: 20px 30px;
+	display: block;
+	background-color: #336F47;
+	font-size: 13px;
+	color: #75ac87;
+	text-align: center;
+}
+
+footer p {
+	font-size: 16px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 2fr);
+	grid-gap: 1em;
+}
+
+.wrapper > div {
+	color: #FFFFFF;
+	padding: 2em 2em 2em 2em;
+	height: 100%;
+	background-color: yellow;
+}
+
+.box1 {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+img {
+	width: 100%;
+	max-width: auto;
+	vertical-align: middle;
+}
+
+.shadowed {
+	box-shadow: 0px 10px 15px 0px gray;
+}
+
+.style-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 0px 0px 6px 0px;
+	max-width: 300px;
+}
+
+.style-nav ul {
+	list-style-type: none;
+}
+
+.style-nav ul li a {
+	text-decoration: none;
+	color: #336f47;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 4px;
+	border: 2px #336f47 solid;
+	border-radius: 20px 5px 20px 5px;
+	margin: 4px auto 4px auto;
+	max-width: 150px;
+}
+
+.style-nav ul li a:hover {
+	background-color: #E0F0E5;
+	border-radius: 20px 5px 20px 5px;
+}
+
+h1 {
+	font-size: 57px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 60px;
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 23px;
+}
+
+.hours {
+	padding: 1em 0em 0em;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 120px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 35px;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.button {
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 20px 5px 20px 5px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 7px;
+}
+
+.info-box {
+	color: #FFFFFF;
+	padding: 2em 	;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	list-style-type: none;
+}
+
+.info-box-about {
+	color: #FFFFFF;
+	padding: 2em;
+	height: 100%;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.info-box-map {
+	color: #FFFfff;
+	padding: 2em 2em 2em 2em;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.red-box {
+	background-color: #d64848;
+}
+
+.green-box {
+	background-color: #336F47;
+}
+
+.dark-box {
+	background-color: #494A49;	
+}
+
+.quote-bubble {
+	background-color: #cbcaca;
+	border-radius: 5px 20px 20px 20px;
+	color: black;
+	text-align: left;
+	padding: 1em;
+	max-width: 50em;
+	margin-bottom: 2em;
+	margin-top: 0em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rounded-corner-shadow
+{
+	color: #2A2A2A;
+	-moz-box-shadow: 2px 4px 15px;
+	-webkit-box-shadow: 2px 4px 15px;
+	-o-box-shadow: 2px 4px 15px;
+	box-shadow: 2px 4px 15px;
+	border-radius: 5px 20px 20px 20px;
+}
+
+.photo-rounded-corners
+{
+	width: 75%;
+	max-width: 11em;
+	border-radius: 20px;
+	background-color: white;
+	margin: 2em 2em 1em 2em;
+}
+
+.specials-photo {
+	width: 75%;
+	border-radius: 20px;
+	margin: 0em auto 2em;
+	max-width: 500px;
+
+	/* shadow */
+	color: #882e2e;
+	-moz-box-shadow: 2px 4px 15px;
+	-webkit-box-shadow: 2px 4px 15px;
+	-o-box-shadow: 2px 4px 15px;
+	box-shadow: 2px 4px 15px;
+}
+
+.portrait {
+	width: 75%;
+	max-width: 11em;
+	border-radius: 50%;
+	margin-bottom: 2em;
+	color: #2A2A2A;
+	-moz-box-shadow: 2px 4px 15px;
+	-webkit-box-shadow: 2px 4px 15px;
+	-o-box-shadow: 2px 4px 15px;
+	box-shadow: 2px 4px 15px;
+}
+
+.col {
+	width: 100%;
+	float: left;
+}
+
+.col-about {
+	width: 100%;
+	float: left;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.color-break-green {
+	background-color: #418F5B;
+	color: #FFFfff;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+
+
+/* - - - - - - - - - - - Tablet View - breakpoint - - - - - - - - - - - */
+@media (min-width: 768px) {
+
+	body {
+		max-width: 778;
+	}
+
+	.row {
+		display: flex;
+	}	
+
+	.hero {
+		height: 550px;
+	}
+
+	.info-box {
+		color: #FFFFFF;
+		padding: 2em;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.call {
+		width: 75%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+		
+	.info-box-about {
+		flex-direction: row;
+	}
+
+	.style-nav ul li {
+		display: inline-block;
+	}
+
+	.style-nav ul {
+		text-align: center;
+		font-size: 120%;
+	}
+
+	.style-nav ul li a {
+		max-width: 200px;
+		padding: 6px;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+	h1 {
+		font-size: 40px;
+		margin-bottom: 90;
+	}
+	
+	.col {
+		padding: 7px 7px 14px;	
+	}
+	
+	.col-md-one-half {
+		width: 50%;
+	}
+}
+
+
+
+/* - - - - - - - - - - - Desktop View - breakpoint - - - - - - - - - - - */
+@media (min-width: 1024px) {
+
+	.hero {
+		background-image: url("../images/carne-asada-tacos.jpg");
+		height: 550px;
+		width: 100%;
+		/* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+		/* Text styles */
+		color: #FFFFFF;
+		text-align: center;
+		padding: 7px 7px 14px;	
+	}
+
+	.portrait {
+		margin-bottom: 5em;
+	}
+
+	.quote-bubble {
+		margin: 0em 4em 4em 4em;
+	}
+	.row {
+		display: flex;
+	}
+
+	.phone-number {
+		font-size: 20px;
+	}
+	
+	.info-box {
+		color: #FFFFFF;
+		padding: 2em 2em 2em 2em;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.call {
+		width: 50%;
+	}
+
+	.style-logo {
+		float: left;
+	}
+
+	.style-nav {
+		float: right;
+		font-size: 120%;
+	}
+
+	.style-nav ul li a {
+		max-width: 200px;
+		padding: 6px;
+	}
+
+	.col {
+		padding: 7px 7px 14px;	
+	}
+
+	.col-lg-one-fourth {
+		width: 25%;
+	}
+}
