@@ -162,11 +162,19 @@ header p {
    background-color: grey;
 }
 
-#contact-info {
+#contact-buttons {
    display: flex;
    justify-content: space-around;
-   max-width: 48rem;
+   max-width: 80rem;
    margin: 1.6rem auto;
+}
+
+#contact-buttons:last-child {
+   padding-right: 0;
+}
+
+#contact-buttons:first-child {
+   padding-left: 0;
 }
 
 #principles {
