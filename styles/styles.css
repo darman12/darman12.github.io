@@ -60,8 +60,38 @@ a:hover {
 }
 a:active { text-decoration: none; }
 
+.site-card img {
+   width: 15rem;
+   height: 18.75rem;
+   overflow: hidden;
+}
+
+.button {
+   margin: 0;
+   padding: .4rem;
+   border-radius: 1.5rem;
+
+   background-color: rgb(61, 61, 61);
+   color: white;
+   font-size: 1.6rem;
+}
+
+.site-card {
+   display: inline-block;
+   text-align: center;
+   max-width: 15rem;
+   margin: 2rem;
+   background-color: grey;
+}
+
 .site-card>a:hover {
    background-color: initial;
+}
+
+.site-card:hover {
+   display: inline-block;
+   position: relative;
+   bottom: 1rem;
 }
 
 p {
@@ -83,24 +113,10 @@ p {
    margin-bottom: -0.4rem;
 }
 
-.site-card img {
-   width: 15rem;
-   height: 18.75rem;
-   overflow: hidden;
-}
-
 .portrait {
    width: 15rem;
    border-radius: 5rem;
    margin: 1.6rem 0em 0em 0em;
-}
-
-.site-card {
-   display: inline-block;
-   text-align: center;
-   max-width: 15rem;
-   margin: 2rem;
-   background-color: grey;
 }
 
 .rounded-corner {
@@ -172,13 +188,26 @@ header p {
    background-color: grey;
 }
 
+#principles {
+   background-color: grey;
+}
+
+#principles p {
+   text-align: left;   
+}
+
+/*------ Footer content ------*/
+footer {
+   background-color: grey;
+   color: rgb(167, 167, 167);
+   padding: 1em;
+}
+
 #contact-buttons {
    display: flex;
    justify-content: space-around;
    max-width: 80rem;
    margin: 1.6rem auto;
-
-
 }
 
 .contact-icon {
@@ -211,22 +240,6 @@ header p {
 #contact-buttons:first-child {
    padding-left: 0;
 }
-
-#principles {
-   background-color: grey;
-}
-
-#principles p {
-   text-align: left;   
-}
-
-footer {
-   background-color: grey;
-   color: rgb(167, 167, 167);
-   padding: 1em;
-}
-
-
 
 
 
