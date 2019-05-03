@@ -18,6 +18,10 @@ main * {
    margin-right: auto;
 }
 
+header {
+   background-color: white;
+}
+
 /*------ Font sizes ------*/
 p  { font-size: 1.6rem;  }
 h1 { font-size: 3.2rem;  }
@@ -77,6 +81,12 @@ p {
    height: 18.75rem;
    width: 15rem;
    margin-bottom: -0.4rem;
+}
+
+.site-card img {
+   width: 15rem;
+   height: 18.75rem;
+   overflow: hidden;
 }
 
 .portrait {
