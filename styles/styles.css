@@ -228,8 +228,8 @@ footer {
    padding-left: 0;
 }
 
-.float-on-hover:hover {
-   animation-name: float;
+.bounce:hover {
+   animation-name: bounce;
    animation-duration: .65s;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -237,7 +237,7 @@ footer {
    position: relative;
 }
 
-@keyframes float {
+@keyframes bounce {
    from {
       bottom: 0;
    }
