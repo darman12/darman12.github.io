@@ -21,7 +21,11 @@
 
    <body>
       <header class="light">
+<<<<<<< HEAD
          <!-- <a href="#contact-buttons" class="button" id="contact-me-button">Contact me</a> -->
+=======
+         <a href="#contact-buttons" class="button" id="contact-me-button">Contact me</a>
+>>>>>>> link-animation
       </header>
 
       <main class="site">
@@ -29,16 +33,17 @@
             <img class="portrait light-shadow" src="images/portrait-code.png" alt="Spencer Freebairn's portrait with code in background" />
             <p>Hello there! I am a web developer who is passionate about making the Internet beautiful. I hope you enjoy your stay in my corner of the web :)</p>
             <img src="images/initials.png" id="initials" alt="Spencer's initials, s and f"/>
-            <a href="#portfolio"><img class="arrow" src="images/down-arrow.svg" alt="down arrow"></a>
+                        
+            <a href="#portfolio" class="animate-down"><img class="arrow" src="images/down-arrow.svg" alt="down arrow"></a>
          </article>
 
          <section id="portfolio">
             <h2>My projects</h2>
-            <div class="site-card">
+            <div class="site-card float-on-hover">
                <a href="portfolio-websites/tortilleria/index.html"><img class="medium-img rounded-corner shadow" src="images/tacos.jpg" alt="carne asada tacos" />
                <p class="site-description light-text shadow">La Popular Tortilleria</p></a>
             </div>
-            <div class="site-card">
+            <div class="site-card float-on-hover">
                <a href="portfolio-websites/personal/index.html"><img class="medium-img rounded-corner shadow" src="images/personal-site.png" alt="Screenshot of landing page for Spencer's personal website" />
                <p class="site-description light-text shadow">Personal Website</p></a>
             </div>
@@ -49,22 +54,21 @@
       <footer>
          <section id="contact-buttons">
                <!-- Messenger icon -->
-               <a href="https://m.me/darman12">
+               <a href="https://m.me/darman12" class="float-on-hover" target="_blank">
                   <img src="images/icons/Facebook-messenger-logo.png" class="contact-icon" alt="Blue gradient Messenger logo">
                </a>
                
-               <!-- Facebook icon 
-               <a target="_blank" href="https://www.facebook.com/darman12"><i class="fab fa-facebook-square fa-3x" style="color:rgb(61, 61, 61)"></i></a>-->
-               <a target="_blank" href="https://www.facebook.com/darman12"><img src="images/icons/Facebook-logo-blue-58.png" class="contact-icon" alt="Blue Facebook logo"></i></a>
+               <!-- Facebook icon -->
+               <a href="https://www.facebook.com/darman12" class="float-on-hover" target="_blank"><img src="images/icons/Facebook-logo-blue-58.png" class="contact-icon" alt="Blue Facebook logo"></i></a>
                
                <!-- Github icon -->
-               <a target="_blank" href="https://www.github.com/darman12">
+               <a href="https://www.github.com/darman12" class="float-on-hover" target="_blank">
                   <img src="images/icons/GitHub-Mark-64px.png" class="contact-icon" alt="Black Github logo">
                </a>
          </section>
          
 
-         <p>Created w/<i class="fas fa-heart"></i> by Spencer Freebairn</p>
+         <p>Created w/<i class="fas fa-heart"></i>by Spencer Freebairn</p>
 
       </footer>
 
