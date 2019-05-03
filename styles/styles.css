@@ -5,6 +5,8 @@ html, html * {
    font-family: 'Nunito', sans-serif;
    font-size: 10px;
    background-color: grey;
+
+   scroll-behavior: smooth;
 }
 
 header *, #introduction, #introduction * {
