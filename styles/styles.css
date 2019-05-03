@@ -171,8 +171,7 @@ header p {
 
 .arrow {
    display: block;
-   margin-right: auto;
-   margin-left: auto;
+   margin: 0 auto;
 }
 
 #portfolio {
@@ -221,13 +220,12 @@ footer {
    padding-left: 0;
 }
 
-.float-hover-animation:hover {
+.float-on-hover:hover {
    animation-name: float;
    animation-duration: .65s;
    animation-iteration-count: infinite;
    animation-direction: alternate;
 
-   display: inline-block;
    position: relative;
 }
 
@@ -237,6 +235,20 @@ footer {
    }
    to {
       bottom: 1rem;
+   }
+}
+
+.animate-down {
+   position: relative;
+   animation: .75s infinite alternate move-down;
+}
+
+@keyframes move-down {
+   from {
+      top: 0;
+   }
+   to {
+      top: .45rem;
    }
 }
 
