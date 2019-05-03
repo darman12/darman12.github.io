@@ -228,11 +228,6 @@ footer {
    padding-left: 0;
 }
 
-<<<<<<< HEAD
-
-
-
-=======
 .float-on-hover:hover {
    animation-name: float;
    animation-duration: .65s;
@@ -264,7 +259,6 @@ footer {
       top: .45rem;
    }
 }
->>>>>>> link-animation
 
 /*
 @supports (grid-area: auto) {
