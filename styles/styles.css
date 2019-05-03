@@ -179,6 +179,29 @@ header p {
    margin: 1.6rem auto;
 }
 
+.contact-icon {
+   width: 42px;
+   height: 42px;
+   
+   /* adds space for the bottom border so it doesn't touch the icon */
+   padding-bottom: .5rem;
+}
+
+#contact-buttons a {
+   border-bottom: .5rem solid grey;
+}
+
+#contact-buttons a:hover {
+   background-color: initial;
+
+   /* move the button up a little bit */
+   display: inline-block;
+   position: relative;
+   bottom: 1rem;
+
+   border-bottom-color: rgb(61, 61, 61);
+}
+
 #contact-buttons:last-child {
    padding-right: 0;
 }
