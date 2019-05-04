@@ -62,6 +62,10 @@ a:hover {
 }
 a:active { text-decoration: none; }
 
+#heart:hover {
+   color: red;
+}
+
 .site-card img {
    width: 15rem;
    height: 18.75rem;
