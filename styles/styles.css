@@ -66,12 +66,6 @@ a:active { text-decoration: none; }
    color: red;
 }
 
-.site-card img {
-   width: 15rem;
-   height: 18.75rem;
-   overflow: hidden;
-}
-
 .button {
    margin: 0;
    padding: .4rem;
@@ -88,6 +82,12 @@ a:active { text-decoration: none; }
    max-width: 15rem;
    margin: 2rem;
    background-color: grey;
+}
+
+.site-card img {
+   width: 15rem;
+   height: 18.75rem;
+   overflow: hidden;
 }
 
 .site-card>a:hover {
