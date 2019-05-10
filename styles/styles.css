@@ -204,7 +204,7 @@ header p {
 
 /*------ Portfolio section ------*/
 #portfolio {
-   margin: 1rem;
+   padding-bottom: 1rem;
 }
 
 /*------ Footer content ------*/
