@@ -1,16 +1,30 @@
 @charset "utf-8"; /* research to find out if this is necessary */
+:root {
+   /*------ Color vars ------*/
+   /* background colors */
+   --dark-grey: rgba(61, 61, 61, 1);
+   --dark-white: #f7f7f7;
+
+   /* text colors */
+   --light-text: rgb(167, 167, 167);
+
+   /* shadow colors */
+   --light-shadow: rgb(187, 187, 187);
+   --dark-shadow: rgb(97, 97, 97);
+}
+
 html, html * {
    margin: 0;
    padding: 0;
    font-family: 'Nunito', sans-serif;
    font-size: 10px;
-   background-color: #f2f2f2;
+   background-color: var(--dark-white);
 
    scroll-behavior: smooth;
 }
 
 header *, #introduction, #introduction * {
-   color: rgb(61, 61, 61);
+   color: var(--dark-grey);
    background-color: white;
 }
 
@@ -48,13 +62,13 @@ li {
 /* The order of these rule sets is important because the rules are layered on top of each other. For example, both the hover and active pseudo-classes will be activated simultaneously when you activate a link. */
 a {
    text-decoration: none;
-   color: rgb(61, 61, 61);
+   color: var(--dark-grey);
 }
 a:visited { 
-   color: rgb(61, 61, 61); 
+   color: var(--dark-grey); 
 }
 a:focus { 
-   outline: 1px solid rgb(61, 61, 61);
+   outline: 1px solid var(--dark-grey);
 }
 a:hover {
    text-decoration: underline;
@@ -71,7 +85,7 @@ a:active { text-decoration: none; }
    padding: .4rem;
    border-radius: 1.5rem;
 
-   background-color: rgb(61, 61, 61);
+   background-color: var(--dark-grey);
    color: white;
    font-size: 1.6rem;
 }
@@ -82,7 +96,7 @@ a:active { text-decoration: none; }
    height: 20rem;
    width: 15rem;
    margin: 1.6rem;
-   background-color: #f2f2f2;
+   background-color: var(--dark-white);
 }
 
 .site-card img {
@@ -111,7 +125,7 @@ p {
 }
 
 .highlight {
-   background-color:rgb(61, 61, 61);
+   background-color:var(--dark-grey);
 }
 
 .medium-img {
@@ -137,7 +151,7 @@ p {
    width: 15rem;
    border-radius: 1.5rem;
 
-   background-color: rgb(61, 61, 61);
+   background-color: var(--dark-grey);
    
    position: relative;
    bottom: 1.66rem;
@@ -148,14 +162,14 @@ p {
    -moz-box-shadow: 0 0 1.5rem;
 	-webkit-box-shadow: 0 0 1.5rem;
 	-o-box-shadow: 0 0 1.5rem;
-	box-shadow: 0 0 1.5rem rgb(97, 97, 97);
+	box-shadow: 0 0 1.5rem var(--dark-shadow);
 }
 
 .light-shadow {
    -moz-box-shadow: 0 0 1.5rem;
 	-webkit-box-shadow: 0 0 1.5rem;
 	-o-box-shadow: 0 0 1.5rem;
-	box-shadow: 0 0 1.5rem rgb(187, 187, 187)
+	box-shadow: 0 0 1.5rem var(--light-shadow);
 }
 
 header {
@@ -191,11 +205,11 @@ header p {
    box-sizing: border-box;
    text-align: center;
    
-   background-color: #f2f2f2;
+   background-color: var(--dark-white);
 }
 
 #principles {
-   background-color: #f2f2f2;
+   background-color: var(--dark-white);
 }
 
 #principles p {
@@ -210,7 +224,7 @@ header p {
 /*------ Footer content ------*/
 footer {
    background-color: white;
-   color: rgb(167, 167, 167);
+   color: var(--light-text);
    padding: 1.6rem 0;
 }
 
@@ -307,7 +321,7 @@ footer * {
    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
    grid-gap: 1em;
 
-   background-color: #f2f2f2;
+   background-color: var(--dark-white);
    }
 
    #portfolio {
