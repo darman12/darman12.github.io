@@ -36,7 +36,7 @@ li { font-size: 1.6rem;  }
 }
 
 h2 {
-   margin-top: 2rem;
+   margin-top: 1.6rem;
 }
 
 li {
@@ -81,7 +81,7 @@ a:active { text-decoration: none; }
    text-align: center;
    height: 20rem;
    width: 15rem;
-   margin: 2rem;
+   margin: 1.6rem;
    background-color: #f2f2f2;
 }
 
@@ -204,14 +204,14 @@ header p {
 
 /*------ Portfolio section ------*/
 #portfolio {
-   padding-bottom: 1rem;
+   padding-bottom: 1.6rem;
 }
 
 /*------ Footer content ------*/
 footer {
    background-color: white;
    color: rgb(167, 167, 167);
-   padding: 1em;
+   padding: 1.6rem 0;
 }
 
 footer * {
@@ -222,7 +222,7 @@ footer * {
    display: flex;
    justify-content: space-around;
    max-width: 80rem;
-   margin: 1.6rem auto;
+   margin: 1.6rem auto 1.6rem auto;
    background-color: inherit;
 }
 
