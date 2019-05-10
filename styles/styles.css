@@ -202,11 +202,20 @@ header p {
    text-align: left;   
 }
 
+/*------ Portfolio section ------*/
+#portfolio {
+   margin: 1rem;
+}
+
 /*------ Footer content ------*/
 footer {
-   background-color: #f2f2f2;
+   background-color: white;
    color: rgb(167, 167, 167);
    padding: 1em;
+}
+
+footer * {
+   background-color: white;
 }
 
 #contact-buttons {
@@ -214,6 +223,7 @@ footer {
    justify-content: space-around;
    max-width: 80rem;
    margin: 1.6rem auto;
+   background-color: inherit;
 }
 
 .contact-icon {
