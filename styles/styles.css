@@ -1,6 +1,6 @@
 @charset "utf-8"; /* research to find out if this is necessary */
 :root {
-   /*------ Color vars ------*/
+   /*------ Color variables ------*/
    /* background colors */
    --dark-grey: rgba(61, 61, 61, 1);
    --dark-white: #f7f7f7;
@@ -28,14 +28,25 @@ header *, #introduction, #introduction * {
    background-color: white;
 }
 
+header {
+   line-height: 2.4rem;
+   background-color: white;
+}
+
+header p {
+   text-align: left;
+   line-height: 3.2rem;
+}
+
 main * {
    max-width: 80rem;
    margin-left: auto;
    margin-right: auto;
 }
 
-header {
-   background-color: white;
+p {
+   text-align: center;
+   padding: 1.6rem;
 }
 
 /*------ Font sizes ------*/
@@ -111,11 +122,6 @@ a:active { text-decoration: none; }
    bottom: 1rem;
 }
 
-p {
-   text-align: center;
-   padding: 1.6rem;
-}
-
 .light-text {
    color: white;
 }
@@ -166,15 +172,6 @@ p {
 	-webkit-box-shadow: 0 0 1.5rem;
 	-o-box-shadow: 0 0 1.5rem;
 	box-shadow: 0 0 1.5rem var(--light-shadow);
-}
-
-header {
-   line-height: 2.4rem;
-}
-
-header p {
-   text-align: left;
-   line-height: 3.2rem;
 }
 
 #introduction {
