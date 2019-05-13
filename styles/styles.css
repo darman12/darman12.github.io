@@ -196,7 +196,6 @@ a:active { text-decoration: none; }
 
 /*------ Portfolio section ------*/
 #portfolio {
-   box-sizing: border-box;
    text-align: center;
    
    padding: 1.6rem 0;
