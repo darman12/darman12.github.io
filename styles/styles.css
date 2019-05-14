@@ -214,6 +214,7 @@ footer * {
    display: flex;
    justify-content: space-around;
    max-width: 80rem;
+   height: 4.6rem;
    margin: 1.6rem auto 3.2rem auto;
 }
 
