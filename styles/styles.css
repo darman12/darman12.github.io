@@ -207,7 +207,7 @@ footer {
 }
 
 footer * {
-   background-color: white;
+   background: transparent;
 }
 
 #contact-buttons {
@@ -215,16 +215,11 @@ footer * {
    justify-content: space-around;
    max-width: 80rem;
    margin: 1.6rem auto 3.2rem auto;
-   background-color: inherit;
 }
 
 .contact-icon {
    width: 4.6rem;
    height: 4.6rem;
-}
-
-#contact-buttons a:hover {
-   background-color: initial;
 }
 
 #contact-buttons:last-child {
@@ -246,9 +241,9 @@ footer * {
 
 #attribution {
    padding: .8rem;
+   background-image: linear-gradient(to right, #44c2fc, #af44fc);
 
    color: white;
-   background-image: linear-gradient(to right, #44c2fc, #af44fc);
 }
 
 #heart {
