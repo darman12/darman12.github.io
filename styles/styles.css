@@ -83,10 +83,6 @@ a:hover {
 }
 a:active { text-decoration: none; }
 
-#heart:hover {
-   color: red;
-}
-
 .button {
    margin: 0;
    padding: .4rem;
@@ -207,7 +203,7 @@ a:active { text-decoration: none; }
 footer {
    background-color: white;
    color: var(--light-text);
-   padding: 1.6rem 0;
+   padding: 1.6rem 0 0 0;
 }
 
 footer * {
@@ -218,7 +214,7 @@ footer * {
    display: flex;
    justify-content: space-around;
    max-width: 80rem;
-   margin: 1.6rem auto 1.6rem auto;
+   margin: 1.6rem auto 3.2rem auto;
    background-color: inherit;
 }
 
@@ -246,6 +242,21 @@ footer * {
    animation-direction: alternate;
 
    position: relative;
+}
+
+#attribution {
+   padding: .8rem;
+
+   color: white;
+   background-image: linear-gradient(to right, #44c2fc, #af44fc);
+}
+
+#heart {
+   background: transparent;
+}
+
+#heart:hover {
+   color: red;
 }
 
 @keyframes bounce {
