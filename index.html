@@ -41,7 +41,12 @@
                   </div>
                </div>
                <div id="project-videos">
-                  <iframe class="youtube-video" onload="setYTembedDimensions()" width="560" height="315" src="https://www.youtube.com/embed/bswEN66MSfg?start=191" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div>
+                     <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/bswEN66MSfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div>
+                     <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/x-7IHZ8xcOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
                </div>
          </section>
 
@@ -66,15 +71,6 @@
 
          <p id="attribution">Created w/<i class="fas fa-heart" id="heart"></i> by Spencer Freebairn</p>
       </footer>
-      <script>
-         function setYTembedDimensions() {
-            if (window.innerWidth < 560){
-               document.querySelector("iframe.youtube-video").width = window.innerWidth; 
-               document.querySelector("iframe.youtube-video").height = 
-                     window.innerWidth * 315 / 560; 
-            }
-         }
-
-      </script>
+      <script type="text/javascript" src="javascript/resize_youtube_videos.js"></script>
    </body>
 </html>
