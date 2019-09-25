@@ -216,13 +216,14 @@ footer * {
 
 #contact-buttons {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
    max-width: 80rem;
-   height: 4.6rem; /* figure out why this value isn't being computed automatically to match the height of the icons */
    margin: 1.6rem auto 3.2rem auto;
 }
 
 .contact-icon {
+   margin: 1.6rem;
    width: 4.6rem;
    height: 4.6rem;
 }
