@@ -33,11 +33,16 @@
          </article>
 
          <section id="portfolio">
-            <h2>Projects</h2>
-            <div class="site-card bounce">
-               <a href="portfolio-websites/tortilleria/index.html" target="_blank"><img class="medium-img rounded-corner light-shadow" src="images/tacos.jpg" alt="carne asada tacos" />
-               <p class="site-description light-text light-shadow">La Popular Tortilleria</p></a>
-            </div>            
+               <h2>Projects</h2>
+               <div id="website-cards">
+                  <div class="site-card bounce">
+                     <a href="portfolio-websites/tortilleria/index.html" target="_blank"><img class="medium-img rounded-corner light-shadow" src="images/tacos.jpg" alt="carne asada tacos" />
+                     <p class="site-description light-text light-shadow">La Popular Tortilleria</p></a>
+                  </div>
+               </div>
+               <div id="project-videos">
+                  <iframe class="youtube-video" onload="setYTembedDimensions()" width="560" height="315" src="https://www.youtube.com/embed/bswEN66MSfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
          </section>
 
       </main>
@@ -60,7 +65,16 @@
          
 
          <p id="attribution">Created w/<i class="fas fa-heart" id="heart"></i> by Spencer Freebairn</p>
-
       </footer>
+      <script>
+         function setYTembedDimensions() {
+            if (window.innerWidth < 560){
+               document.querySelector("iframe.youtube-video").width = window.innerWidth; 
+               document.querySelector("iframe.youtube-video").height = 
+                     window.innerWidth * 315 / 560; 
+            }
+         }
+
+      </script>
    </body>
 </html>

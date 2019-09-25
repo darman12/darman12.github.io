@@ -199,6 +199,10 @@ a:active { text-decoration: none; }
    background-color: var(--dark-white);
 }
 
+#project-videos {
+   margin: 1.6em 0;
+}
+
 /*------ Footer content ------*/
 footer {
    background-color: white;
