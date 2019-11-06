@@ -214,6 +214,11 @@ footer * {
    background: transparent;
 }
 
+footer > p {
+   line-height: 42px;
+   padding: 0px;
+}
+
 #contact-buttons {
    display: flex;
    flex-wrap: wrap;
@@ -246,7 +251,6 @@ footer * {
 }
 
 #attribution {
-   padding: .8rem;
    background-image: linear-gradient(to right, #44c2fc, #af44fc);
 
    color: white;
@@ -258,6 +262,14 @@ footer * {
 
 #heart:hover {
    color: red;
+}
+
+#github-logo {
+   position: relative;
+   top: 4px;
+   margin: 0 0 0 3px;
+   width: 2rem;
+   height: 2rem;
 }
 
 @keyframes bounce {
