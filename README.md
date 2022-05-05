@@ -1,2 +1,2 @@
 # darman12.github.io
-This is my portfolio site
+This project is my [personal site](https://darman12.github.io/)
