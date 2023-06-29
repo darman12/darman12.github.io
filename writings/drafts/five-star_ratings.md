@@ -1,0 +1,2 @@
+* why I find it hard for to use five-star rating systems
+    * am I rating based on my expectations? relative to previous ratings of mine? relative to other places of a similar caliber (e.g. wendy's compared to mcdonalds or wendy's compared to red robin)? what are the odds that anyone else rates in the same manner much less *everyone* else
