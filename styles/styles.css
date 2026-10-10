@@ -222,7 +222,7 @@ footer > p {
 #contact-buttons {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-evenly;
    max-width: 80rem;
    margin: 1.6rem auto 3.2rem auto;
 }
